@@ -1,13 +1,13 @@
 cask "dev-workspace" do
   version "1.0.0"
-  sha256 "31f1eae8dbf7bdb4c6d2037d990cce116eda7cb62319d4d81defaf8835b33c7a"
+  sha256 "f630976cde50a1e984a9493e43b5ced0aefa8d56bec0bf0dad54c5c322ea690c"
 
   url "https://github.com/MdShahnawazSheikh/DevWorkspace/releases/download/v#{version}/DevWorkspace.zip"
   name "DevWorkspace"
   desc "One-click dev environment launcher, env var vault, and ports cleaner for macOS"
   homepage "https://github.com/MdShahnawazSheikh/DevWorkspace"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "DevWorkspace.app"
 
